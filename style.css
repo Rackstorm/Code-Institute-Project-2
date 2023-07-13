@@ -1,19 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
 * {
+    height: 100%;
     margin: 0 auto;
+    font-family: 'Pangolin', cursive;
 }
 
 body {
-    background-color: #123A45;
-    width: 65%;
+    width: 60%;
+    height: auto;
+    background: linear-gradient(#123A45, #236569);
 }
 
 header {
-    background-color: #236569;
-    padding: 10%;
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10px;
 }
 
 nav {
-    background-color: #414540;
     position: relative;
 }
 
@@ -21,11 +27,13 @@ main {
     background-color: #608B80;
     padding: 10%;
     height: auto;
+    text-align: center;
 }
 
 footer {
     background-color: #236569;
-    padding: 10%;
+    padding: 10px 10px;
+    color: white;
 }
 
 /* styling of links in the nav bar */
@@ -35,7 +43,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #414540;
+    background: linear-gradient(#ff751a, #b34700);
 }
 
 li {
@@ -51,5 +59,39 @@ li a {
 }
 
 li a:hover {
-    background-color: #94CBA7;
+    color: #ccc;
+}
+
+/* Styling of headings */
+
+h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: #000 1px 0 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-shadow: #000 1px 0 10px;
+    padding-bottom: 15px;
+}
+
+/* Styling of Buttons */
+
+button {
+    font-size: 14px;
+    width: 20%;
+    padding: 12px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* styling of ordered list */
+
+ol {
+    display: inline-block;
+    list-style-position: none;
 }
