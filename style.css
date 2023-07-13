@@ -79,7 +79,7 @@ h1 {
 
 /* Styling of Buttons */
 
-.btn {
+.button {
     font-size: 14px;
     width: 100%;
     padding: 12px;
@@ -93,15 +93,6 @@ h1 {
     transition: all 0.5s;
 }
 
-.btn:hover:not([disabled]) {
-    color: #fff;
-    background: #222;
-}
-
-.btn:disabled {
-    cursor: no-drop;
-}
-
 #next-button {
     font-size: 14px;
     width: 120px;
@@ -111,7 +102,7 @@ h1 {
     border: 1px solid black;
     color: white;
     border-radius: 20px;
-    overflow: visible;
+    display: none;
 }
 
 

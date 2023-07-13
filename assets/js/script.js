@@ -1,3 +1,5 @@
+// the quiz questions
+
 const questions = [
     {
         question: "What acid is used in higher concentrations to clean concrete, industrial equipment, metal, and water?",
@@ -50,20 +52,20 @@ const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-button");
 
-let currentQuestionIndex = 0;
+let currentScore = 0;
 let score = 0;
 
 function startGame() {
-    currentQuestionIndex = 0;
+    currentScore = 0;
     score = 0;
     nextButton.innerHTML = "Next Question";
-    showQuestion();
+    thisQuestion();
 }
 
-function showQuestion() {
+function thisQuestion() {
     resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
+    let currentQuestion = questions[currentScore];
+    let questionNo = currentScore + 1;
     questionElement.innerHTML = questionNo + ", " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
@@ -79,12 +81,6 @@ function showQuestion() {
 
 }
 
-function resetState() {
-    nextButton.style.display = "none";
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild);
-    }
-}
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
@@ -95,7 +91,7 @@ function selectAnswer(e) {
     } else {
         selectedBtn.classList.add("incorrect");
     }
-    Array.from(answerButtons.children).forEach(button => {
+    Array.from(answerButton.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
@@ -113,20 +109,19 @@ function showScore() {
 
 
 function handleNextButton() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
+    currentScore++;
+    if (currentScore < questions.length) {
+        thisQuestion();
     } else {
         showScore();
     }
 }
 
 nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
+    if (currentScore < questions.length) {
         handleNextButton();
     } else {
         startQuiz();
     }
-}
-
+});
 startQuiz();
