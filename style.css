@@ -19,6 +19,11 @@ header {
     padding-bottom: 10px;
 }
 
+header img {
+    filter: drop-shadow(1px 0px 10px #000);
+    padding-left: 20px;
+}
+
 nav {
     position: relative;
     border-top-left-radius: 15px;
@@ -27,7 +32,7 @@ nav {
 
 main {
     background-color: #608B80;
-    padding: 8%;
+    padding: 45px;
     height: auto;
     text-align: center;
 }
@@ -39,6 +44,8 @@ footer {
     text-align: center;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
 }
 
 /* styling of links in the nav bar */
@@ -84,12 +91,12 @@ h2 {
 #question {
     color: darkslategray;
     font-weight: 400;
-    size: 1em;
+    size: 0.em;
 }
 
 
 #question-container {
-    font-size: 2em;
+    font-size: 1.5em;
     color: darkslategray;
     text-shadow: #000 1px 0 2px;
     padding-bottom: 15px;
