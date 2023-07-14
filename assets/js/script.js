@@ -51,7 +51,7 @@ const questions = [
 // variables
 
 const questionElement = document.getElementById("question");
-const answerButton = document.getElementById("answer-buttons");
+const answerButton = document.getElementById("answer-options");
 const nextButton = document.getElementById("next-button");
 
 let currentScore = 0;
@@ -67,7 +67,7 @@ function currentQuestion() {
 }
 
 
-function selectAnswer(e) {
+function selectAnswer() {
 }
 
 function showScore() {
