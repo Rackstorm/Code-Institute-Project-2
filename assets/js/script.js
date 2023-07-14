@@ -138,9 +138,6 @@ function clearUp(element) {
     element.classList.remove('incorrect');
 }
 
-// will add these functions later on!
-
-
 function gameTimer() {
     // add visible timer with 15 sec countdown
 }
