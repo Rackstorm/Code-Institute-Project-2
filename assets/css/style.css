@@ -49,6 +49,10 @@ footer {
     align-items: center;
 }
 
+footer img {
+    width: 40px;
+}
+
 /* styling of links in the nav bar */
 
 ul {
@@ -159,7 +163,6 @@ h2 {
 
 ol {
     display: inline-block;
-    list-style-position: none;
 }
 
 
