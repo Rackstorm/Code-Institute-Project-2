@@ -1,4 +1,4 @@
-// the quiz questions
+// the questions used for quiz
 
 const questions = [
     {
@@ -48,6 +48,8 @@ const questions = [
     }
 ];
 
+// variables
+
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-button");
@@ -55,7 +57,7 @@ const nextButton = document.getElementById("next-button");
 let currentScore = 0;
 let score = 0;
 
-
+// functions for starting, handling current and next questions, selecting answers and showing score
 
 function startGame() {
 
