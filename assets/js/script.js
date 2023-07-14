@@ -65,7 +65,7 @@ let shuffledQuestions, currentQuestionIndex;
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
-    setNextQuestion();
+    nextQuestion();
 });
 
 function startGame() {
@@ -73,10 +73,12 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     questionContainer.classList.remove('hide');
-    setNextQuestion();
+    nextQuestion();
 }
 
-function setNextQuestion() {
+// write comment about managing set up of questions and visibility
+
+function nextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
@@ -96,19 +98,21 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    clearStatusClass(document.body);
+    clearUp(document.body);
     nextButton.classList.add('hide');
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
+// write comment about answers and button visibility after choosing an answer
+
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    setStatusClass(document.body);
+    settingStatus(document.body);
     Array.from(answerButtons.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
+        settingStatus(button, button.dataset.correct);
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
@@ -118,8 +122,10 @@ function selectAnswer(e) {
     }
 }
 
-function setStatusClass(element, correct) {
-    clearStatusClass(element);
+// confirming whether answer is correct/incorrect and clearing up for the next question
+
+function settingStatus(element, correct) {
+    clearUp(element);
     if (correct) {
         element.classList.add('correct');
     } else {
@@ -127,7 +133,17 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass(element) {
+function clearUp(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+}
+
+// will add these functions later on!
+
+function score() {
+    // add visible score function
+}
+
+function gameTimer() {
+    // add visible timer with 15 sec countdown
 }
