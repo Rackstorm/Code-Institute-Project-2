@@ -17,7 +17,6 @@ header {
     height: auto;
     padding-top: 10%;
     padding-bottom: 10px;
-    border-radius: 15px 15px 15px 15px;
 }
 
 nav {
@@ -172,28 +171,8 @@ ol {
 
 .correct {
     background: green;
-    font-size: 14px;
-    width: 100%;
-    padding: 12px;
-    margin: 10px;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 20px;
-    overflow: visible;
-    cursor: pointer;
-    transition: all 0.5s;
 }
 
 .incorrect {
     background-color: red;
-    font-size: 14px;
-    width: 100%;
-    padding: 12px;
-    margin: 10px;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 20px;
-    overflow: visible;
-    cursor: pointer;
-    transition: all 0.5s;
 }

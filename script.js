@@ -106,7 +106,7 @@ function resetState() {
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    setStatusClass(document.body, correct);
+    setStatusClass(document.body);
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
@@ -123,11 +123,11 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add('correct');
     } else {
-        element.classList.add('wrong');
+        element.classList.add('incorrect');
     }
 }
 
 function clearStatusClass(element) {
     element.classList.remove('correct');
-    element.classList.remove('wrong');
+    element.classList.remove('incorrect');
 }
