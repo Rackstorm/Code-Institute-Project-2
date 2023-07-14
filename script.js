@@ -140,9 +140,6 @@ function clearUp(element) {
 
 // will add these functions later on!
 
-function score() {
-    // add visible score function
-}
 
 function gameTimer() {
     // add visible timer with 15 sec countdown
