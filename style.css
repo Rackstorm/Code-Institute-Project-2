@@ -4,6 +4,7 @@
     height: 100%;
     margin: 0 auto;
     font-family: 'Pangolin', cursive;
+    color: #fff;
 }
 
 body {
@@ -16,24 +17,29 @@ header {
     height: auto;
     padding-top: 10%;
     padding-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 nav {
     position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 main {
     background-color: #608B80;
-    padding: 10%;
+    padding: 8%;
     height: auto;
     text-align: center;
 }
 
 footer {
-    background-color: #236569;
+    background: linear-gradient(#ff751a, #b34700);
     padding: 10px 10px;
     color: white;
     text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /* styling of links in the nav bar */
@@ -65,15 +71,21 @@ li a:hover {
 /* Styling of headings */
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     color: white;
     text-shadow: #000 1px 0 10px;
 }
 
-#question {
-    font-size: 2em;
-    color: white;
+h2 {
+    padding-bottom: 10px;
+    font-size: 2.5em;
     text-shadow: #000 1px 0 10px;
+}
+
+#question-container {
+    font-size: 2em;
+    color: darkslategray;
+    text-shadow: #000 1px 0 2px;
     padding-bottom: 15px;
 }
 
@@ -85,7 +97,7 @@ h1 {
     padding: 12px;
     margin: 10px;
     display: inline-block;
-    background-color: white;
+    background-color: #123A45;
     border: 1px solid black;
     border-radius: 20px;
     overflow: visible;
@@ -94,11 +106,13 @@ h1 {
 }
 
 .button:hover {
-    background-color: #123A45;
+    background-color: black;
     color: white;
 }
 
-#next-button {
+.start-button,
+.next-button {
+    font-size: 14px;
     font-size: 14px;
     width: 120px;
     padding: 12px;
@@ -107,6 +121,17 @@ h1 {
     border: 1px solid black;
     color: white;
     border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.start-button:hover,
+.next-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.hide {
     display: none;
 }
 
@@ -123,7 +148,7 @@ ol {
 
 .container {
     background: #fff;
-    width: 60%;
+    width: 70%;
     height: auto;
     padding: 25px;
     border: 1px solid black;
@@ -131,12 +156,37 @@ ol {
     box-sizing: border-box;
 }
 
+.start-next {
+    display: inline-block;
+    overflow: visible;
+}
+
 /* styling wrong/right answer effect */
 
 .correct {
     background: green;
+    font-size: 14px;
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: visible;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .incorrect {
     background-color: red;
+    font-size: 14px;
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: visible;
+    cursor: pointer;
+    transition: all 0.5s;
 }

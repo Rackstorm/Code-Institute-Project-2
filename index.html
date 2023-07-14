@@ -21,15 +21,26 @@
         </ul>
     </nav>
     <main>
-        <h2>Let's begin!</h2>
-        <button class="button">
-            <a href="quiz.html">Start</a>
-        </button>
 
+        <div class="container" id="container">
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons">
+                    <button class="button">Answer 1</button>
+                    <button class="button">Answer 2</button>
+                    <button class="button">Answer 3</button>
+                    <button class="button">Answer 4</button>
+                </div>
+            </div>
+        </div>
+        <div class="start-next">
+            <button class="start-button" id="start-button">Start</button>
+            <button class="next-button hide" id="next-button">Next Question</button>
+        </div>
 
     </main>
     <footer>Code Institute - Project 2 / A JavaScript Project / Pauline</footer>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
