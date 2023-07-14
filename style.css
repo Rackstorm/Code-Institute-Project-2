@@ -82,6 +82,13 @@ h2 {
     text-shadow: #000 1px 0 10px;
 }
 
+#question {
+    color: darkslategray;
+    font-weight: 400;
+    size: 1em;
+}
+
+
 #question-container {
     font-size: 2em;
     color: darkslategray;
