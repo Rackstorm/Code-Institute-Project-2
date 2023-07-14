@@ -15,7 +15,7 @@ body {
 
 header {
     height: auto;
-    padding-top: 10%;
+    padding-top: 40px;
     padding-bottom: 10px;
 }
 
@@ -40,6 +40,7 @@ main {
 footer {
     background: linear-gradient(#ff751a, #b34700);
     padding: 10px 10px;
+    margin-bottom: 20px;
     color: white;
     text-align: center;
     border-bottom-left-radius: 15px;
@@ -91,7 +92,8 @@ h2 {
 #question {
     color: darkslategray;
     font-weight: 400;
-    size: 0.em;
+    font-size: 1em;
+    padding-bottom: 35px;
 }
 
 
@@ -106,7 +108,7 @@ h2 {
 
 .button {
     font-size: 14px;
-    width: 100%;
+    width: 60%;
     padding: 12px;
     margin: 10px;
     display: inline-block;
@@ -160,13 +162,21 @@ ol {
 /* styling of the game container and quiz questions*/
 
 .container {
-    background: #fff;
-    width: 70%;
+    width: 80%;
     height: auto;
     padding: 25px;
+    box-sizing: border-box;
+
+}
+
+#question-container {
+    background: #fff;
+    width: 100%;
+    padding: 25px;
+    height: auto;
     border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
-    box-sizing: border-box;
+
 }
 
 .start-next {
