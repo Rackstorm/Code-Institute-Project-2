@@ -50,9 +50,11 @@ const questions = [
 
 // variables
 
-const questionElement = document.getElementById("question");
-const answerButton = document.getElementById("answer-options");
-const nextButton = document.getElementById("next-button");
+const startButton = document.getElementById('start-button');
+const nextButton = document.getElementById('next-button');
+const questionContainerElement = document.getElementsByClassName('container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
 
 let currentScore = 0;
 let score = 0;
@@ -76,5 +78,3 @@ function showScore() {
 
 function nextQuestion() {
 }
-
-
