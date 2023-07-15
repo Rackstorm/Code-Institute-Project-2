@@ -200,3 +200,50 @@ ol {
 .incorrect {
     background-color: red;
 }
+
+/*responsiveness for smaller screens */
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 25px;
+        color: white;
+        text-shadow: #000 1px 0 3px;
+    }
+
+
+    h2 {
+        padding-bottom: 10px;
+        font-size: 16px;
+        text-shadow: #000 1px 0 3px;
+    }
+
+    main {
+        background-color: #608B80;
+        ;
+    }
+
+    header img {
+        width: 20%;
+        height: auto;
+        filter: drop-shadow(1px 0px 10px #000);
+        padding-left: 20px;
+    }
+
+    #question-container {
+        width: 100%;
+        overflow: visible;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    .button {
+        width: 100%;
+        display: inline-block;
+    }
+}

@@ -107,6 +107,7 @@ Site has been tested at [Wave](https://wave.webaim.org/report#/https://rackstorm
 - Due to being completely brand new into this tech world, the `git commit -m “commit message”` have gradually improved throughout this project since it was difficult for me to understand the importance of good logging in the beginning.
 
 ## GitHub Pages
+
 1. Opened up the repository "Code_Institute_Project-2" on ym profile.
 2. Clicked on 'Settings' and scrolled down to 'Pages'.
 3. Selected the 'Master Branch' and waited for the page to reload.
@@ -116,13 +117,16 @@ Link to the project can be found [here](https://rackstorm.github.io/Code_Institu
 
 # Credits
 
-## Code 
+All quiz questions and answers are from [Trivia Question Quiz](https://www.triviaquestionquiz.com/weird-trivia-questions-and-answers)
+
+## Code
 
 1. I've been using some animation effects on the css styling from [GreatStack's Javascript quiz tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8)
-2. I've been using some code from [WebDev Simplified's Javascript tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k) 
+2. I've been using some code from [WebDev Simplified's Javascript tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k)
 3. For the timer and a deeper understanding of certain functions I've been using the help from [W3Schools)(https://www.w3schools.com/js/default.asp).
 
 ## Images and Icons
+
 1. The favicon icon is from [Icon8](https://icons8.com/) and has been converted with the [Favicon.ico converter](https://favicon.io/favicon-converter/).
 2. The GitHub icon is from [PngAAA](https://www.pngaaa.com/).
 3. The header icon is the same as the icon and is from [Icon8](https://icons8.com/).
