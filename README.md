@@ -4,7 +4,7 @@ The Weird Quiz is a short 5 question quiz site with more odd questions than the 
 
 The contrasts are substantial with a darker background and a navigation menu and footer that breaks off with an invigorating color. The font clearly tells that this is about a simple online game with no advanced intention or function.
 
-![Mockup](docs/readme_images/mockup.png)
+![Mockup](assets/docs/readme_images/mockup.png)
 
 # Design
 
@@ -28,8 +28,6 @@ The contrasts are substantial with a darker background and a navigation menu and
 - Used an icon from [Icon 8](https://icons8.com/icons)
 - Favicon was created through [Favicon Converter](https://favicon.io/favicon-converter/)
 - The same favicon is used throughout every single page to make it easier for the user to recognize the website if they have other tabs open.
-
-![The Expedition](docs/readme_images/story.png)
 
 # Features to implement
 
