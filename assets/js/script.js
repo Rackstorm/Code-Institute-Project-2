@@ -57,8 +57,10 @@ const theQuestions = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 
 let currentScore = 0;
-let score = 0;
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions
+let currentQuestionIndex;
+
+
 
 // starting the game
 
@@ -138,6 +140,15 @@ function clearUp(element) {
     element.classList.remove('incorrect');
 }
 
+// a visible timer - the player has 15 sec for each question
+
 function gameTimer() {
-    // add visible timer with 15 sec countdown
+    var sec = 15;
+    var timer = setInterval(function () {
+        document.getElementById('gameTimer').innerHTML = '00:' + sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval(timer);
+        }
+    }, 1000);
 }

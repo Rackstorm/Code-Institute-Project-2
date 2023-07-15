@@ -45,7 +45,7 @@ PICTURES
 
 # Testing
 
-- The website has been tested using the extension "Live Server" throughout the project.
+- The website has been tested using the extension "Live Server" throughout the project in the IDE.
 - Dev Tools has been used to check the responsiveness in different screen sizes.
 - The project has been tested in different browsers such as Chrome, IE Edge, Firefox, Safari and Opera with no errors.
 - The site has also been deployed to Git Pages and regurlarly been checked for errors.
