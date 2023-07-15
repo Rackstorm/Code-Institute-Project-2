@@ -1,6 +1,3 @@
-
-
-
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const questionContainer = document.getElementById('question-container');
@@ -10,6 +7,7 @@ const scoreResult = document.getElementById('score');
 
 let shuffledQuestions;
 let currentQuestionIndex;
+let timer;
 
 
 
@@ -35,7 +33,7 @@ function startGame() {
 // write comment about managing set up of questions and visibility
 
 function nextQuestion() {
-    gameTimer();
+    clearInterval(timer);
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
@@ -102,13 +100,14 @@ function currentScore() {
 // a visible timer - the player has 15 sec for each question
 function gameTimer() {
     var sec = 15;
-    var timer = setInterval(function () {
-        document.getElementById('timer').innerHTML = '00:' + sec;
-        sec--;
-        if (sec < 0) {
-            clearInterval(timer);
-            alert('You ran out of time! Try again..');
-            window.location = "index.html";
-        }
-    }, 1000);
-}
+    timer = setInterval
+        (function () {
+            document.getElementById('timer').innerHTML = '00:' + sec;
+            sec--;
+            if (sec < 0) {
+                clearInterval(timer);
+                alert('You ran out of time! Try again..');
+                window.location = "index.html";
+            }
+        }, 1000);
+};
