@@ -53,7 +53,19 @@ const questionContainer = document.getElementById('question-container');
 const theQuestions = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 
-const gameTimer = document.getElementById('timer');
+
+function gameTimer() {
+    var sec = 15;
+    var timer = setInterval(function () {
+        document.getElementById('timer').innerHTML = '00:' + sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval(timer);
+            alert('You ran out of time!');
+            timedOut();
+        }
+    }, 1000);
+};
 
 let currentScore = 0;
 let shuffledQuestions;
@@ -142,15 +154,4 @@ function clearUp(element) {
 
 // a visible timer - the player has 15 sec for each question
 
-function gameTimer() {
-    var sec = 15;
-    var timer = setInterval(function () {
-        document.getElementById('timer').innerHTML = '00:' + sec;
-        sec--;
-        if (sec < 0) {
-            clearInterval(timer);
-            alert('You ran out of time!');
-            timedOut();
-        }
-    }, 1000);
-};
+

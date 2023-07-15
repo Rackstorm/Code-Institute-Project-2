@@ -148,6 +148,19 @@ h2 {
     transition: all 0.5s;
 }
 
+.gameinfo {
+    font-size: 14px;
+    width: 60%;
+    padding: 12px;
+    margin: 10px;
+    background-color: #123A45;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: visible;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
 .start-button:hover,
 .next-button:hover {
     background-color: black;
