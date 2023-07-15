@@ -64,7 +64,6 @@ function resetState() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct;
     settingStatus(document.body);
     Array.from(answerButtons.children).forEach(button => {
         settingStatus(button, button.dataset.correct);
@@ -72,7 +71,7 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Restart';
+        startButton.innerText = 'Want to play again?';
         startButton.classList.remove('hide');
     }
 }
@@ -102,13 +101,7 @@ function gameTimer() {
         sec--;
         if (sec < 0) {
             clearInterval(timer);
-            alert("You ran out of time!");
+            alert('You ran out of time!');
             timedOut();
         }
-
-
-function timedOut() {
-    document.getElementById('question-container).innerHTML = ´"You ran out of time!"´;
-
-            setTimeout(restart, 5000);//* setTimeout(myFunction, 5 seconds);
-        };
+    }, 1000)};
