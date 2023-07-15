@@ -1,4 +1,5 @@
 
+
 // variables
 
 const startButton = document.getElementById('start-button');
@@ -21,6 +22,7 @@ startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     nextQuestion();
+    gameTimer();
 });
 
 function startGame() {
@@ -29,6 +31,7 @@ function startGame() {
     currentQuestionIndex = 0;
     questionContainer.classList.remove('hide');
     nextQuestion();
+    gameTimer();
 }
 
 // write comment about managing set up of questions and visibility
@@ -104,4 +107,5 @@ function gameTimer() {
             alert('You ran out of time!');
             timedOut();
         }
-    }, 1000)};
+    }, 1000);
+};
