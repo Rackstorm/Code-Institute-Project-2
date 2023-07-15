@@ -6,8 +6,8 @@ const nextButton = document.getElementById('next-button');
 const questionContainer = document.getElementById('question-container');
 const theQuestions = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
+const scoreResult = document.getElementById('score');
 
-let currentScore = 0;
 let shuffledQuestions;
 let currentQuestionIndex;
 
@@ -19,21 +19,23 @@ startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     nextQuestion();
-    gameTimer();
 });
 
 function startGame() {
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
+    currentScore = 0;
     questionContainer.classList.remove('hide');
     nextQuestion();
     gameTimer();
+    currentScore();
 }
 
 // write comment about managing set up of questions and visibility
 
 function nextQuestion() {
+    gameTimer();
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
@@ -46,6 +48,7 @@ function showQuestion(question) {
         button.classList.add('button');
         if (answer.correct) {
             button.dataset.correct = answer.correct;
+            currentScore++;
         }
         button.addEventListener('click', selectAnswer);
         answerButtons.appendChild(button);
@@ -92,6 +95,10 @@ function clearUp(element) {
     element.classList.remove('incorrect');
 }
 
+function currentScore() {
+
+};
+
 // a visible timer - the player has 15 sec for each question
 function gameTimer() {
     var sec = 15;
@@ -100,10 +107,8 @@ function gameTimer() {
         sec--;
         if (sec < 0) {
             clearInterval(timer);
-            alert('You ran out of time!');
-            timedOut();
+            alert('You ran out of time! Try again..');
+            window.location = "index.html";
         }
     }, 1000);
-};
-
-
+}

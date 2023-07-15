@@ -152,13 +152,12 @@ h2 {
     font-size: 18px;
     font-weight: 400;
     color: #123A45;
-    width: 10%;
+    width: 50%;
     padding: 12px;
     margin: 10px;
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 20px;
-    overflow: visible;
     cursor: pointer;
     transition: all 0.5s;
     overflow: visible;
