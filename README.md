@@ -22,6 +22,29 @@ The contrasts consist of a darker background and a navigation menu and footer th
 
 - Presents the game in its entirety along with the question, alternative answers, a timer. Finally, the final score and time it has taken the user to play the game are reported.
 
+## Start Game
+
+Press the button in order to reveal the quiz questions and answer options.
+
+![1](assets/docs/readme_images/1.png)
+
+## Quiz
+
+Select answer in order to move on to the next question. Score and timer visible.
+
+![2](assets/docs/readme_images/2.png)
+
+## Clicking buttons
+
+The right button will show green and wrong button will show red. An correct answer will add 1 to scoreboard.
+![3](assets/docs/readme_images/3.png)
+![4](assets/docs/readme_images/4.png)
+
+## End of Quiz
+
+At the last question you will be able to press "Play again".
+![5](assets/docs/readme_images/5.png)
+
 ## Favicon
 
 - Used an icon from [Icon 8](https://icons8.com/icons)
