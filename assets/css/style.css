@@ -295,4 +295,9 @@ ol {
         width: 100%;
         display: inline-block;
     }
+
+    .timer-score {
+        width: 100%;
+        display: inline-block;
+    }
 }

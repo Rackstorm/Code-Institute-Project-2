@@ -54,9 +54,10 @@ The contrasts consist of a darker background and a navigation menu and footer th
 
 ## Bugs
 
-1. **Received error message "net::ERR_ABORTED"** - Wasn't sure whether it had to do with me or the fact that CodeAnywhere had Workspace issues at that particular time but after re-organizing the folders with the js and css files it functioned well afterwards. 2.**Couldn't load favicon site.webmanifest.** - Had issues with the I found a solution by using a tip from a [blog post on Medium](https://medium.com/@aurelien.delogu/401-error-on-a-webmanifest-file-cb9e3678b9f3).
-2. **Faulty width-attribute on image** - Styled the image in the css instead of inside the img tag.
-3. **Faulty property: list-style-type** - Deleted it completely out of the nav bar.
+1. **Received error message "net::ERR_ABORTED"** - Wasn't sure whether it had to do with me or the fact that CodeAnywhere had Workspace issues at that particular time but after re-organizing the folders with the js and css files it functioned well afterwards.
+2. **Couldn't load favicon site.webmanifest.** - Had issues with the I found a solution by using a tip from a [blog post on Medium](https://medium.com/@aurelien.delogu/401-error-on-a-webmanifest-file-cb9e3678b9f3).
+3. **Faulty width-attribute on image** - Styled the image in the css instead of inside the img tag.
+4. **Faulty property: list-style-type** - Deleted it completely out of the nav bar.
 
 ## Unfixed Bugs
 
