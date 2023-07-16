@@ -1,8 +1,8 @@
 # The Weird Quiz - Project 2
 
-The Weird Quiz is a short 5 question quiz site with more odd questions than the classic society/politics/music/film quiz. The homepage maintains a simple impression, as do the functions with a stripped-down navigation menu with only two buttons - Home and Game rules.
+The Weird Quiz is a short 5 question quiz site with more odd questions than the classic society/politics/music/film quiz. The homepage gives a simple expression, as do the functions with a stripped-down navigation menu with only two buttons - Home and Game rules.
 
-The contrasts are substantial with a darker background and a navigation menu and footer that breaks off with an invigorating color. The font clearly tells that this is about a simple online game with no advanced intention or function.
+The contrasts consist of a darker background and a navigation menu and footer that breaks off with an popping color. The font clearly tells that this is about a simple online game with no advanced intention or function.
 
 ![Mockup](assets/docs/readme_images/mockup.png)
 
@@ -10,14 +10,13 @@ The contrasts are substantial with a darker background and a navigation menu and
 
 - **Header** - A simple text and logo with a shadow effect to spark interest.
 - **Nav bar** - Two functioning links to index.html and gamerules.html. A bright orange background color to create contrast.
-- **Main** - The landing page contains a white header with a question that encourages the user to play the game. Color of background and text in strong contrast. Sparing with content to leave room for the quiz.
+- **Main** - The landing page contains a white header with a question that encourages the user to play the game. Color of background and text in great contrast.
 - **Footer** - The same color as in the navigation bar to create a uniform impression. The footer is clean and stripped down on impressions with the exception of the GitHub logo with a working link to my GitHub profile. The link opens in a new window.
 
 # Pages
 
 - Index - Prompts the user to click the button to start the game and then presents the game, scoreboard and timer.
 - Game Rules - Provides instructions on the rules of the game in a simple numbered list.
-- 404 Page - If something doesn't work, the user is automatically redirected to the 404 page.
 
 # Features
 
@@ -34,7 +33,7 @@ The contrasts are substantial with a darker background and a navigation menu and
 1. Adding a "type in your name" feature to submit to make the quiz more personal.
 2. Add more questions to the quiz.
 3. Set up a multiplayer function to make things more interesting.
-4. A 404 page
+4. A 404 page.
 
 # Design
 
@@ -61,8 +60,8 @@ The contrasts are substantial with a darker background and a navigation menu and
 
 ## Unfixed Bugs
 
-- Timer bugging and skips seconds sometimes. Ran out of time to fix it.
-- Alert message pops up several times when timer is running out. Ran out of time to fix it.
+1. **Timer** - Timer bugging and skips seconds sometimes. Ran out of time to fix it.
+2. **Timed out** - Alert message pops up several times when timer is running out. Ran out of time to fix it.
 
 ## Validator Testing
 
@@ -83,12 +82,12 @@ No errors were returned when passing through the official [W3C validator](https:
 
 ### Lighthouse
 
-![W3C Bug](assets/docs/readme_images/lighthouse.png)
+![Lighthouse](assets/docs/readme_images/lighthouse.png)
 
 - Received score 98/100.
 - Had 1 warning.
 
-![W3C Bug](docs/testing/lighthouse_issues.png)
+![Lighthouse Warning](assets/docs/readme_images/lighthouse_warning.png)
 
 ### Wave
 
@@ -110,7 +109,7 @@ Site has been tested at [Wave](https://wave.webaim.org/report#/https://rackstorm
 
 ## Adding, committing and pushing code
 
-- All code has been pushed to the repository https://github.com/Rackstorm/Code-Institute_Project-1
+- All code has been pushed to the repository https://rackstorm.github.io/Code_Institute_Project-2/
 - All code has been regurlary added, committed and pushed throughout the project.
 - The commands being used are `git add <file>`,
   `git commit -m “commit message”` and
@@ -119,7 +118,7 @@ Site has been tested at [Wave](https://wave.webaim.org/report#/https://rackstorm
 
 ## GitHub Pages
 
-1. Opened up the repository "Code_Institute_Project-2" on ym profile.
+1. Opened up the repository "Code_Institute_Project-2" on my profile.
 2. Clicked on 'Settings' and scrolled down to 'Pages'.
 3. Selected the 'Master Branch' and waited for the page to reload.
 4. Page was successfully deployed to GitHub Pages.
@@ -134,14 +133,14 @@ All quiz questions and answers are from [Trivia Question Quiz](https://www.trivi
 
 1. I've been using some animation effects on the css styling from [GreatStack's Javascript quiz tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 2. I've been using some code from [WebDev Simplified's Javascript tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k)
-3. For the timer and a deeper understanding of certain functions I've been using the help from [W3Schools)(https://www.w3schools.com/js/default.asp).
+3. For the timer and a deeper understanding of certain functions I've been using the help from [W3Schools](https://www.w3schools.com/js/default.asp) and reading maaaaany threads about peoples issues at [StackOverflow](https://stackoverflow.com/).
 4. Got inspired by student [PdoyleC](https://github.com/PdoyleC/PP2-The-General-Quiz-Of-Everything).
 
 ## Images and Icons
 
 1. The favicon icon is from [Icon8](https://icons8.com/) and has been converted with the [Favicon.ico converter](https://favicon.io/favicon-converter/).
 2. The GitHub icon is from [PngAAA](https://www.pngaaa.com/).
-3. The header icon is the same as the icon and is from [Icon8](https://icons8.com/).
+3. The header icon is the same as the favicon and is from [Icon8](https://icons8.com/).
 
 # Acknowledgement
 
