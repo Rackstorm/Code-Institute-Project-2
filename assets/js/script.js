@@ -9,11 +9,11 @@ const scoreValue = document.getElementById('score-value');
 let shuffledQuestions;
 let currentQuestionIndex;
 let timer;
-let currentScore = 0; // Variable to track the current score
+let currentScore = 0;
 
 // starting the game
 startButton.addEventListener('click', startGame);
-nextButton.addEventListener('click', clearBeforeNextQuestion); // Update the event listener
+nextButton.addEventListener('click', clearBeforeNextQuestion);
 
 function startGame() {
     startButton.classList.add('hide');
@@ -57,7 +57,7 @@ function clearBeforeNextQuestion() {
 
 function showQuestion(question) {
     theQuestions.innerText = question.question;
-    answerButtons.innerHTML = ''; // Clear the answer buttons
+    answerButtons.innerHTML = '';
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -65,7 +65,7 @@ function showQuestion(question) {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
             button.addEventListener('click', () => {
-                updateScore(); // Call updateScore() when a correct answer is selected
+                updateScore();
             });
         }
         button.addEventListener('click', selectAnswer);
@@ -75,7 +75,7 @@ function showQuestion(question) {
 
 function resetState() {
     clearUp(document.body);
-    clearTimerDisplay(); // Clear the timer display
+    clearTimerDisplay();
     nextButton.classList.add('hide');
 }
 
@@ -108,10 +108,10 @@ function clearUp(element) {
 }
 
 function clearTimerDisplay() {
-    document.getElementById('timer').innerHTML = '00:00'; // Reset the timer display
+    document.getElementById('timer').innerHTML = '00:00';
 }
 
-// a visible timer - the player has 15 sec for each question
+
 function gameTimer() {
     let sec = 15;
     timer = setInterval(function () {
