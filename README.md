@@ -70,6 +70,11 @@ No errors were returned when passing through the official [W3C validator](https:
 ![W3C Bug](assets/docs/readme_images/jigsaw.png)
 No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) validator the second time.
 
+### JavaScript - JShint
+
+![W3C](assets/docs/readme_images/JShint.png)
+No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F) the second time. The questions are to be found in a separate file, hence the 'undefined variable'.
+
 ### Lighthouse
 
 ![W3C Bug](assets/docs/readme_images/jigsaw.png)

@@ -4,7 +4,6 @@ const nextButton = document.getElementById('next-button');
 const questionContainer = document.getElementById('question-container');
 const theQuestions = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
-const scoreResult = document.getElementById('score');
 const scoreValue = document.getElementById('score-value');
 
 let shuffledQuestions;
@@ -92,7 +91,6 @@ function resetState() {
 }
 // hidden buttons - if the chosen answer is correct the "Next Question" button will be visible and clickable to move on
 function selectAnswer(e) {
-    const selectedButton = e.target;
     settingStatus(document.body);
     Array.from(answerButtons.children).forEach(button => {
         settingStatus(button, button.dataset.correct);
