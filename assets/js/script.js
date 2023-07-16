@@ -1,3 +1,6 @@
+
+// variables needed for the basics
+
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const questionContainer = document.getElementById('question-container');
@@ -11,9 +14,11 @@ let currentQuestionIndex;
 let timer;
 let currentScore = 0;
 
-// starting the game
+// visible start button and next button
 startButton.addEventListener('click', startGame);
-nextButton.addEventListener('click', clearBeforeNextQuestion);
+nextButton.addEventListener('click', clearNextQuestion);
+
+// starting the game
 
 function startGame() {
     startButton.classList.add('hide');
@@ -49,7 +54,7 @@ function nextQuestion() {
     }
 }
 
-function clearBeforeNextQuestion() {
+function clearNextQuestion() {
     clearInterval(timer);
     currentQuestionIndex++;
     nextQuestion();
@@ -121,7 +126,7 @@ function gameTimer() {
             clearInterval(timer);
             alert('You ran out of time!');
             timedOut();
-            clearBeforeNextQuestion();
+            clearNextQuestion();
         }
     }, 18000);
 }
