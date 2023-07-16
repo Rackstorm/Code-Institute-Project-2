@@ -1,3 +1,6 @@
+
+// questions used for the quiz 
+
 const questions = [
     {
         question: "What acid is used in higher concentrations to clean concrete, industrial equipment, metal, and water?",
