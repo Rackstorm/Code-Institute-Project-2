@@ -1,3 +1,5 @@
+// code being used from other creators have been outlined next to the function
+
 // variables 
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
@@ -16,7 +18,7 @@ startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', prepNextQuestion); // Update the event listener
 
 // asking the player to press start game - no questions/answer options will be available until pressing "Start Game"
-function startGame() {
+function startGame() {  //Code used from WebDev Simplified's Javascript tutorial and modified
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
@@ -45,7 +47,7 @@ function handleTimeout() {
 }
 
 // preparing the next question by  shuffling the questions, keeping track of the currentQuestionIndex and starting the timer for the current question
-function nextQuestion() {
+function nextQuestion() { //Code used from WebDev Simplified's Javascript tutorial and modified
     resetState();
     if (shuffledQuestions.length > currentQuestionIndex) {
         showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -54,7 +56,7 @@ function nextQuestion() {
 }
 
 // clearing up the timer, incrementing the currentQuestionIndex and calls the nextQuestion function in order to provide new questions
-function prepNextQuestion() {
+function prepNextQuestion() {  //Code used from WebDev Simplified's Javascript tutorial and modified
     clearInterval(timer);
     currentQuestionIndex++;
     nextQuestion();
@@ -62,7 +64,7 @@ function prepNextQuestion() {
 
 // loading the questions and options into the buttons on the page and calling the score update question
 
-function showQuestion(question) {
+function showQuestion(question) {  //Code used from WebDev Simplified's Javascript tutorial and modified
     theQuestions.innerText = question.question;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -81,7 +83,7 @@ function showQuestion(question) {
 
 // clearing up the questions and answers as well as activating the clearing timer display function
 
-function resetState() {
+function resetState() { //Code used from WebDev Simplified's Javascript tutorial and modified
     clearUp(document.body);
     clearTimerDisplay();
     nextButton.classList.add('hide');
@@ -90,7 +92,7 @@ function resetState() {
     }
 }
 // hidden buttons - if the chosen answer is correct the "Next Question" button will be visible and clickable to move on
-function selectAnswer(e) {
+function selectAnswer(e) { //Code used from WebDev Simplified's Javascript tutorial and modified
     settingStatus(document.body);
     Array.from(answerButtons.children).forEach(button => {
         settingStatus(button, button.dataset.correct);
@@ -105,7 +107,7 @@ function selectAnswer(e) {
 
 // showing the right and wrong answers after clicking - if correct answer the background will turn green, if incorrect it will turn red
 
-function settingStatus(element, correct) {
+function settingStatus(element, correct) { //Code modified with styling from GreatStack's Javascript quiz tutorial
     clearUp(element);
     if (correct) {
         element.classList.add('correct');

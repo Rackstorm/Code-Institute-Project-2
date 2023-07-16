@@ -34,6 +34,7 @@ The contrasts are substantial with a darker background and a navigation menu and
 1. Adding a "type in your name" feature to submit to make the quiz more personal.
 2. Add more questions to the quiz.
 3. Set up a multiplayer function to make things more interesting.
+4. A 404 page
 
 # Design
 
@@ -48,7 +49,7 @@ The contrasts are substantial with a darker background and a navigation menu and
 - Dev Tools has been used to check the responsiveness in different screen sizes as well as error codes.
 - The project has been tested in different browsers such as Chrome, IE Edge, Firefox, Safari and Opera with no errors.
 - The site has also been deployed to Git Pages and regurlarly been checked for errors.
-- Testing has also been made in Jshint, Jigsaw, W3 Validator, Wave and Lighthouse.
+- Testing has also been made in Jshint, Jigsaw, W3 Validator, Browserling, Wave and Lighthouse.
 
 ![Testing](assets/docs/readme_images/testing.png)
 
@@ -144,4 +145,5 @@ All quiz questions and answers are from [Trivia Question Quiz](https://www.trivi
 
 # Acknowledgement
 
-A massive **thank you** to my mentor Luke Buchanan for giving me pep talks in dark moments and providing good hints and aha-moments when I was struggling.
+- A massive **thank you** to my mentor Luke Buchanan for giving me pep talks in dark moments and providing good hints and aha-moments when I was struggling.
+- **Thanks** to the tutor Josh who helped me finding a small error when my eyes were to tired to read spaghetti.
