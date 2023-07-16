@@ -39,14 +39,16 @@ The contrasts are substantial with a darker background and a navigation menu and
 
 ## Wireframes
 
-PICTURES
+![Desktop](assets/docs/readme_images/wireframe_desktop.png)
+![Phone](assets/docs/readme_images/wireframe_phone.png)
 
 # Testing
 
 - The website has been tested using the extension "Live Server" throughout the project in the IDE.
-- Dev Tools has been used to check the responsiveness in different screen sizes.
+- Dev Tools has been used to check the responsiveness in different screen sizes as well as error codes.
 - The project has been tested in different browsers such as Chrome, IE Edge, Firefox, Safari and Opera with no errors.
 - The site has also been deployed to Git Pages and regurlarly been checked for errors.
+- Testing has also been made in Jshint, Jigsaw, W3 Validator, Wave and Lighthouse.
 
 ## Bugs
 
@@ -60,17 +62,17 @@ TEXT
 
 ### HTML - W3C validator
 
-![W3C](docs/readme_images/W3Validator.png)
+![W3C](assets/docs/readme_images/htmlvalidator)
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F) the second time.
 
 ### CSS - Jigsaw Validator
 
-![W3C Bug](docs/readme_images/jigsaw.png)
+![W3C Bug](assets/docs/readme_images/jigsaw.png)
 No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) validator the second time.
 
 ### Lighthouse
 
-![W3C Bug](docs/testing/lighthouse.png)
+![W3C Bug](assets/docs/readme_images/jigsaw.png)
 
 - Received score 91/100.
 - Had some warnings and errors.
