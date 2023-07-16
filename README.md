@@ -144,5 +144,5 @@ All quiz questions and answers are from [Trivia Question Quiz](https://www.trivi
 
 # Acknowledgement
 
-- A massive **thank you** to my mentor Luke Buchanan for giving me pep talks in dark moments and providing good hints and aha-moments when I was struggling.
-- **Thanks** to the tutor Josh who helped me finding a small error when my eyes were to tired to read spaghetti.
+1. A massive **thank you** to my mentor Luke Buchanan for giving me pep talks in dark moments and providing good hints and aha-moments when I was struggling.
+2. **Thanks** to the tutor Josh who helped me finding a small error when my eyes were to tired to read spaghetti.
