@@ -31,9 +31,9 @@ The contrasts are substantial with a darker background and a navigation menu and
 
 # Features to implement
 
-1.
-2.
-3.
+1. Adding a "type in your name" feature to submit to make the quiz more personal.
+2. Add more questions to the quiz.
+3. Set up a multiplayer function to make things more interesting.
 
 # Design
 
@@ -50,13 +50,18 @@ The contrasts are substantial with a darker background and a navigation menu and
 - The site has also been deployed to Git Pages and regurlarly been checked for errors.
 - Testing has also been made in Jshint, Jigsaw, W3 Validator, Wave and Lighthouse.
 
+![Testing](assets/docs/readme_images/testing.png)
+
 ## Bugs
 
-TEXT
+1. **Received error message "net::ERR_ABORTED"** - Wasn't sure whether it had to do with me or the fact that CodeAnywhere had Workspace issues at that particular time but after re-organizing the folders with the js and css files it functioned well afterwards. 2.**Couldn't load favicon site.webmanifest.** - Had issues with the I found a solution by using a tip from a [blog post on Medium](https://medium.com/@aurelien.delogu/401-error-on-a-webmanifest-file-cb9e3678b9f3).
+2. **Faulty width-attribute on image** - Styled the image in the css instead of inside the img tag.
+3. **Faulty property: list-style-type** - Deleted it completely out of the nav bar.
 
 ## Unfixed Bugs
 
-TEXT
+- Timer bugging and skips seconds sometimes. Ran out of time to fix it.
+- Alert message pops up several times when timer is running out. Ran out of time to fix it.
 
 ## Validator Testing
 
@@ -77,10 +82,10 @@ No errors were returned when passing through the official [W3C validator](https:
 
 ### Lighthouse
 
-![W3C Bug](assets/docs/readme_images/jigsaw.png)
+![W3C Bug](assets/docs/readme_images/lighthouse.png)
 
-- Received score 91/100.
-- Had some warnings and errors.
+- Received score 98/100.
+- Had 1 warning.
 
 ![W3C Bug](docs/testing/lighthouse_issues.png)
 
@@ -129,9 +134,14 @@ All quiz questions and answers are from [Trivia Question Quiz](https://www.trivi
 1. I've been using some animation effects on the css styling from [GreatStack's Javascript quiz tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 2. I've been using some code from [WebDev Simplified's Javascript tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k)
 3. For the timer and a deeper understanding of certain functions I've been using the help from [W3Schools)(https://www.w3schools.com/js/default.asp).
+4. Got inspired by student [PdoyleC](https://github.com/PdoyleC/PP2-The-General-Quiz-Of-Everything).
 
 ## Images and Icons
 
 1. The favicon icon is from [Icon8](https://icons8.com/) and has been converted with the [Favicon.ico converter](https://favicon.io/favicon-converter/).
 2. The GitHub icon is from [PngAAA](https://www.pngaaa.com/).
 3. The header icon is the same as the icon and is from [Icon8](https://icons8.com/).
+
+# Acknowledgement
+
+A massive **thank you** to my mentor Luke Buchanan for giving me pep talks in dark moments and providing good hints and aha-moments when I was struggling.

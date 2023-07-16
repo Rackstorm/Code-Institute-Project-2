@@ -32,7 +32,7 @@ function updateScore() {
     renderScore(); // displaying the score value
 }
 
-// updating the score by showing correct clicked answers continuesly throughout the game
+// updating the score by displaying correct clicked answers continuesly throughout the game
 function renderScore() {
     scoreValue.innerText = currentScore;
 }
