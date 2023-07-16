@@ -1,3 +1,4 @@
+// variables 
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const questionContainer = document.getElementById('question-container');
@@ -9,7 +10,7 @@ const scoreValue = document.getElementById('score-value');
 let shuffledQuestions;
 let currentQuestionIndex;
 let timer;
-let currentScore = 0; // Variable to track the current score
+let currentScore = 0;
 
 // visible start button and next button
 startButton.addEventListener('click', startGame);
@@ -27,16 +28,14 @@ function startGame() {
     gameTimer(); // starting the timer when the game starts
 }
 
-
-
 function updateScore() {
     currentScore++; // updating the score continuesly throughout the game
     renderScore(); // displaying the score value
 }
 
-// showing the amount of correct clicked answers continuesly throughout the game
+// updating the score by showing correct clicked answers continuesly throughout the game
 function renderScore() {
-    scoreValue.innerText = currentScore; // updating the score value
+    scoreValue.innerText = currentScore;
 }
 
 // alert and redirecting if/when timer runs out
@@ -56,9 +55,8 @@ function nextQuestion() {
 }
 
 // clearing up the timer, incrementing the currentQuestionIndex and calls the nextQuestion function in order to provide new questions
-
 function prepNextQuestion() {
-    clearInterval(timer); // Clear the interval before moving to the next question
+    clearInterval(timer);
     currentQuestionIndex++;
     nextQuestion();
 }
