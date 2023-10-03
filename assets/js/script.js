@@ -7,10 +7,14 @@ const questionContainer = document.getElementById('question-container');
 const theQuestions = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const scoreValue = document.getElementById('score-value');
+let timer = document.getElementById('timer');
+
+const timePerQuestion = 15;
 
 let shuffledQuestions;
 let currentQuestionIndex;
-let timer;
+let timeLeft = timePerQuestion;
+let timerInterval;
 let currentScore = 0;
 
 // visible start button and next button
@@ -26,7 +30,6 @@ function startGame() {  //Code used from WebDev Simplified's Javascript tutorial
     questionContainer.classList.remove('hide');
     renderScore(); // display the initial score which is 0
     nextQuestion();
-    gameTimer(); // starting the timer when the game starts
 }
 
 function updateScore() {
@@ -41,7 +44,7 @@ function renderScore() {
 
 // alert and redirecting if/when timer runs out
 function handleTimeout() {
-    clearInterval(timer);
+    clearTimer();
     alert('You ran out of time!');
     prepNextQuestion();
 }
@@ -51,13 +54,13 @@ function nextQuestion() { //Code used from WebDev Simplified's Javascript tutori
     resetState();
     if (shuffledQuestions.length > currentQuestionIndex) {
         showQuestion(shuffledQuestions[currentQuestionIndex]);
-        gameTimer();
+        setTimer();
     }
 }
 
 // clearing up the timer, incrementing the currentQuestionIndex and calls the nextQuestion function in order to provide new questions
 function prepNextQuestion() {  //Code used from WebDev Simplified's Javascript tutorial and modified
-    clearInterval(timer);
+    clearTimer();
     currentQuestionIndex++;
     nextQuestion();
 }
@@ -85,7 +88,6 @@ function showQuestion(question) {  //Code used from WebDev Simplified's Javascri
 
 function resetState() { //Code used from WebDev Simplified's Javascript tutorial and modified
     clearUp(document.body);
-    clearTimerDisplay();
     nextButton.classList.add('hide');
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
@@ -93,7 +95,8 @@ function resetState() { //Code used from WebDev Simplified's Javascript tutorial
 }
 // hidden buttons - if the chosen answer is correct the "Next Question" button will be visible and clickable to move on
 function selectAnswer(e) { //Code used from WebDev Simplified's Javascript tutorial and modified
-    settingStatus(document.body);
+    clearTimer();
+    // settingStatus(document.body);
     Array.from(answerButtons.children).forEach(button => {
         settingStatus(button, button.dataset.correct);
     });
@@ -123,19 +126,28 @@ function clearUp(element) {
     element.classList.remove('incorrect');
 }
 
-// resetting the timer display to "00:00" in the timer button after each answer is clicked
-function clearTimerDisplay() {
-    document.getElementById('timer').innerHTML = '00:00';
+function gameTimer() {
+    if (timeLeft >= 0) {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        timer.innerText = formattedTime;
+        timeLeft--;
+    } else {
+        Array.from(answerButtons.children).forEach(button => {
+            button.disabled = true;
+            settingStatus(button, button.dataset.correct);
+        });
+        nextButton.classList.remove('hide');
+    }
 }
 
-// the timer showing 15 seconds counting down - if running out of time the timedOut() function will be called
-function gameTimer() {
-    let sec = 15;
-    timer = setInterval(function () {
-        document.getElementById('timer').innerHTML = '00:' + (sec < 10 ? '0' + sec : sec);
-        sec--;
-        if (sec < 0) {
-            handleTimeout();
-        }
-    }, 1000);
+
+function setTimer() {
+    timerInterval = setInterval(gameTimer, 1000);
+}
+
+function clearTimer() {
+    clearInterval(timerInterval);
+    timeLeft = timePerQuestion;
 }
