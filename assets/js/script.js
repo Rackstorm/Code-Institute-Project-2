@@ -96,14 +96,16 @@ function resetState() { //Code used from WebDev Simplified's Javascript tutorial
 // hidden buttons - if the chosen answer is correct the "Next Question" button will be visible and clickable to move on
 function selectAnswer(e) { //Code used from WebDev Simplified's Javascript tutorial and modified
     clearTimer();
-    // settingStatus(document.body);
     Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct) {
+            button.disabled = true; 
+        }
         settingStatus(button, button.dataset.correct);
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Want to play again?'; // ask you to play again at the last question
+        startButton.innerText = 'Want to play again?';
         startButton.classList.remove('hide');
     }
 }
@@ -138,9 +140,12 @@ function gameTimer() {
             button.disabled = true;
             settingStatus(button, button.dataset.correct);
         });
-        nextButton.classList.remove('hide');
+        timer.innerText = '00:00';
+        clearTimer();
+        selectAnswer();
     }
 }
+
 
 
 function setTimer() {
