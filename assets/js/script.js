@@ -50,11 +50,14 @@ function handleTimeout() {
 }
 
 // preparing the next question by  shuffling the questions, keeping track of the currentQuestionIndex and starting the timer for the current question
+
 function nextQuestion() { //Code used from WebDev Simplified's Javascript tutorial and modified
     resetState();
     if (shuffledQuestions.length > currentQuestionIndex) {
         showQuestion(shuffledQuestions[currentQuestionIndex]);
         setTimer();
+    } else {
+        displayEndScore(); // Call displayEndScore() when no more questions are left
     }
 }
 
@@ -105,7 +108,7 @@ function selectAnswer(e) { //Code used from WebDev Simplified's Javascript tutor
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Want to play again?';
+        displayEndScore(); // Call displayEndScore() when no more questions are left
         startButton.classList.remove('hide');
     }
 }
@@ -158,4 +161,16 @@ function setTimer() {
 function clearTimer() {
     clearInterval(timerInterval);
     timeLeft = timePerQuestion;
+}
+
+// displaying the final score and the option to play again
+
+function displayEndScore() {
+    clearUp(document.body);
+    questionContainer.classList.add('hide');
+    timer.classList.add('hide'); // Hide the timer
+    score.innerText = 'Total Score: ' + currentScore;
+    score.classList.remove('hide'); // Show the score
+    startButton.innerText = 'Want to play again?';
+    startButton.classList.remove('hide');
 }
