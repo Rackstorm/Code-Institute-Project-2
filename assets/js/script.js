@@ -98,7 +98,7 @@ function selectAnswer(e) { //Code used from WebDev Simplified's Javascript tutor
     clearTimer();
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct) {
-            button.disabled = true; 
+            button.disabled = true;
         }
         settingStatus(button, button.dataset.correct);
     });
@@ -128,6 +128,7 @@ function clearUp(element) {
     element.classList.remove('incorrect');
 }
 
+// timer function - if the timer runs out the game will end and the player will be able to click "next question" to move on
 function gameTimer() {
     if (timeLeft >= 0) {
         const minutes = Math.floor(timeLeft / 60);
@@ -148,10 +149,12 @@ function gameTimer() {
 
 
 
+// setting the timer interval and time left
 function setTimer() {
     timerInterval = setInterval(gameTimer, 1000);
 }
 
+// clearing up the timer for each question
 function clearTimer() {
     clearInterval(timerInterval);
     timeLeft = timePerQuestion;
