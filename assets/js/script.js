@@ -4,6 +4,7 @@
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const questionContainer = document.getElementById('question-container');
+const resultContainer = document.getElementById('result-container');
 const theQuestions = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const scoreValue = document.getElementById('score-value');
@@ -56,8 +57,6 @@ function nextQuestion() { //Code used from WebDev Simplified's Javascript tutori
     if (shuffledQuestions.length > currentQuestionIndex) {
         showQuestion(shuffledQuestions[currentQuestionIndex]);
         setTimer();
-    } else {
-        displayEndScore(); // Call displayEndScore() when no more questions are left
     }
 }
 
@@ -169,7 +168,7 @@ function displayEndScore() {
     clearUp(document.body);
     questionContainer.classList.add('hide');
     timer.classList.add('hide'); // Hide the timer
-    score.innerText = 'Total Score: ' + currentScore;
+    score.innerText = 'Total Score: ' + currentScore + ' out of ' + questions.length;
     score.classList.remove('hide'); // Show the score
     startButton.innerText = 'Want to play again?';
     startButton.classList.remove('hide');
