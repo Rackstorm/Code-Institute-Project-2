@@ -16,7 +16,6 @@ let shuffledQuestions;
 let currentQuestionIndex;
 let timeLeft = timePerQuestion;
 let timerInterval;
-let currentScore = 0;
 
 // Hide the question container and results container before clicking the start button
 resultsContainer.classList.add('hide');
@@ -28,15 +27,18 @@ nextButton.addEventListener('click', prepNextQuestion); // Update the event list
 
 // asking the player to press start game - no questions/answer options will be available until pressing "Start Game"
 function startGame() {  //Code used from WebDev Simplified's Javascript tutorial and modified
-
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
-    currentScore = 0;
+    currentScore = 0; // Clear the current score
+    renderScore(); // Update the score display
+    timer.classList.remove('hide'); // Show the timer
+    score.classList.remove('hide'); // Show the score
     questionContainer.classList.remove('hide');
     resultsContainer.classList.remove('hide');
     nextQuestion();
 }
+
 
 function updateScore() {
     currentScore++; // updating the score continuesly throughout the game
@@ -155,7 +157,6 @@ function gameTimer() {
 }
 
 
-
 // setting the timer interval and time left
 function setTimer() {
     timerInterval = setInterval(gameTimer, 1000);
@@ -172,9 +173,10 @@ function clearTimer() {
 function displayEndScore() {
     clearUp(document.body);
     questionContainer.classList.add('hide');
-    timer.classList.add('hide'); // Hide the timer
-    score.innerText = 'Total Score: ' + currentScore + ' out of ' + questions.length;
-    score.classList.remove('hide'); // Show the score
+    timer.classList.add('hide');
+    score.classList.remove('hide');
+    scoreValue.innerText = currentScore + ' / ' + questions.length;
     startButton.innerText = 'Want to play again?';
     startButton.classList.remove('hide');
 }
+
