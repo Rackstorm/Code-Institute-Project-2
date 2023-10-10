@@ -1,21 +1,24 @@
 // code being used from other creators have been outlined next to the function
 
 // Variables
-const startButton = document.getElementById('start-button'); // Get the start button element
-const nextButton = document.getElementById('next-button'); // Get the next button element
-const questionContainer = document.getElementById('question-container'); // Get the question container element
-const resultsContainer = document.getElementById('results-container'); // Get the results container element
-const theQuestions = document.getElementById('question'); // Get the question element
-const answerButtons = document.getElementById('answer-buttons'); // Get the answer buttons element
-const scoreValue = document.getElementById('score-value'); // Get the score value element
-let timer = document.getElementById('timer'); // Get the timer element
+const startButton = document.getElementById('start-button');
+const nextButton = document.getElementById('next-button');
+const questionContainer = document.getElementById('question-container');
+const resultsContainer = document.getElementById('results-container');
+const theQuestions = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
+const scoreValue = document.getElementById('score-value');
+const score = document.getElementById('score');
+let timer = document.getElementById('timer');
 
-const timePerQuestion = 15; // Set the time allowed per question
+const timePerQuestion = 15;
 
-let shuffledQuestions; // Store shuffled questions
-let currentQuestionIndex; // Store the index of the current question
-let timeLeft = timePerQuestion; // Store the time left for the current question
-let timerInterval; // Store the timer interval
+let shuffledQuestions;
+let currentQuestionIndex;
+let currentScore = 0; // Declare and initialize currentScore
+let timeLeft = timePerQuestion;
+let timerInterval;
+
 
 // Hide the question container and results container before clicking the start button
 resultsContainer.classList.add('hide');
@@ -51,13 +54,6 @@ function updateScore() {
 // Update the score by displaying correct clicked answers
 function renderScore() {
     scoreValue.innerText = currentScore;
-}
-
-// Alert and redirect if/when timer runs out
-function handleTimeout() {
-    clearTimer();
-    alert('You ran out of time!');
-    prepNextQuestion();
 }
 
 // Prepare the next question by shuffling the questions and starting the timer. Code used from WebDev Simplified's Javascript tutorial and modified

@@ -90,8 +90,17 @@ At the last question you will be able to press "Play again".
 1. None.
 
 
-## Validator Testing
+## Validator 
+
+### ! Resubmission !
 Double-checked my site through W3C/Jigsaw Validator once again when resubmitting my project but couldn't find any issues this time either. 
+- No issues in JShint
+- No issues in W3C/Jigsaw
+![W3C Validator](/docs/ResubValidator1.png)
+![W3C Validator](/docs/ResubValidator2.png)
+![W3C Validator](/docs/ResubHTMLChecker1.png)
+![W3C Validator](/docs/ResubHTMLChecker2.png)
+
 
 
 
