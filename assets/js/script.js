@@ -4,7 +4,7 @@
 const startButton = document.getElementById('start-button');
 const nextButton = document.getElementById('next-button');
 const questionContainer = document.getElementById('question-container');
-const resultContainer = document.getElementById('result-container');
+const resultsContainer = document.getElementById('results-container');
 const theQuestions = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const scoreValue = document.getElementById('score-value');
@@ -18,18 +18,23 @@ let timeLeft = timePerQuestion;
 let timerInterval;
 let currentScore = 0;
 
+// Hide the question container and results container before clicking the start button
+resultsContainer.classList.add('hide');
+questionContainer.classList.add('hide');
+
 // visible start button and next button
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', prepNextQuestion); // Update the event listener
 
 // asking the player to press start game - no questions/answer options will be available until pressing "Start Game"
 function startGame() {  //Code used from WebDev Simplified's Javascript tutorial and modified
+
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     currentScore = 0;
     questionContainer.classList.remove('hide');
-    renderScore(); // display the initial score which is 0
+    resultsContainer.classList.remove('hide');
     nextQuestion();
 }
 
