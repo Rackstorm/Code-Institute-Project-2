@@ -140,17 +140,15 @@ function clearUp(element) {
 // timer function - if the timer runs out the game will end and the player will be able to click "next question" to move on
 function gameTimer() {
     if (timeLeft >= 0) {
-        const minutes = Math.floor(timeLeft / 60);
-        const seconds = timeLeft % 60;
-        const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-        timer.innerText = formattedTime;
+        const formattedTime = "00:" + timeLeft.toString().padStart(2, '0');
+        document.getElementById("timer").innerText = formattedTime;
         timeLeft--;
     } else {
         Array.from(answerButtons.children).forEach(button => {
             button.disabled = true;
             settingStatus(button, button.dataset.correct);
         });
-        timer.innerText = '00:00';
+        document.getElementById("timer").innerText = '00:00';
         clearTimer();
         selectAnswer();
     }
