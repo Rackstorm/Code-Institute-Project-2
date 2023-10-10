@@ -20,7 +20,7 @@ The contrasts consist of a darker background and a navigation menu and footer th
 
 # Features
 
-- Presents the game in its entirety along with the question, alternative answers, a timer. Finally, the final score and time it has taken the user to play the game are reported.
+- Presents the game in its entirety along with the question, alternative answers, a timer. At the end of the game the player will be able to see the final score and asked to play again.
 
 ## Start Game
 
@@ -30,13 +30,13 @@ Press the button in order to reveal the quiz questions and answer options.
 
 ## Quiz
 
-Select answer in order to move on to the next question. Score and timer visible.
+Select answer in order to move on to the next question. Score and timer visible. If no answer is selected, the time will run out and the button "Next Question" will pop up.
 
 ![2](/docs/2.png)
 
 ## Clicking buttons
 
-The right button will show green and wrong button will show red. An correct answer will add 1 to scoreboard.
+The right button will show green and wrong button will show red. A correct answer will add 1 to scoreboard. 
 ![3](/docs/3.png)
 ![4](/docs/4.png)
 
@@ -86,6 +86,8 @@ At the last question you will be able to press "Play again".
 ## RESUBMISSION - Fixed Bugs
 1. **Timer** - Timer bugging and skips seconds sometimes. Turned out to be two functions being called cancelling each other out. Re-arranged the timer function, breaking it down and streamlined it.
 2. **Timed out** - Alert message pops up several times when timer is running out. Decided to skip the alert message altogether and focus on letting the button "Next Question" pop up instead to create a more seamless experience.
+3. **Navigation issues** - Due to timer issues that now has been solved it is now possible to navigate onward without issues. As soon as an answer has been selected, the Next Question-button pops up. 
+4. **Adding to the scoreboard** - It's not possible to click the right answer several times or go back to the previous question to get a higher score.
 ## Unfixed Bugs
 1. None.
 
