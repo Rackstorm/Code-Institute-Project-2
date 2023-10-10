@@ -42,7 +42,7 @@ nav {
 
 main {
     background-color: #608B80;
-    padding: 45px;
+    padding: 20px;
     height: auto;
     text-align: center;
 }
@@ -77,11 +77,11 @@ ul {
     border-top-right-radius: 15px;
 }
 
-li {
+ul>li {
     float: left;
 }
 
-li a {
+ul>li a {
     display: block;
     color: white;
     font-size: 18px;
@@ -91,10 +91,17 @@ li a {
     text-shadow: #323232 1px 0 3px;
 }
 
-li a:hover {
+ul>li a:hover {
     color: #ccc;
 }
 
+/* Styling of the list on the game rules page */
+
+ol>li {
+    text-align: left;
+}
+
+]
 /* Styling of headings by setting size, padding, color and shadow effects*/
 
 h1 {
@@ -272,7 +279,6 @@ ol {
 
     main {
         background-color: #608B80;
-        ;
     }
 
     header img {
