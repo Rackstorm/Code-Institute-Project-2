@@ -4,7 +4,7 @@ The Weird Quiz is a short 5 question quiz site with more odd questions than the 
 
 The contrasts consist of a darker background and a navigation menu and footer that breaks off with an popping color. The font clearly tells that this is about a simple online game with no advanced intention or function.
 
-![Mockup](assets/docs/readme_images/mockup.png)
+![Mockup](/docs/mockup.png)
 
 # Design
 
@@ -26,24 +26,24 @@ The contrasts consist of a darker background and a navigation menu and footer th
 
 Press the button in order to reveal the quiz questions and answer options.
 
-![1](assets/docs/readme_images/1.png)
+![1](/docs/1.png)
 
 ## Quiz
 
 Select answer in order to move on to the next question. Score and timer visible.
 
-![2](assets/docs/readme_images/2.png)
+![2](/docs/2.png)
 
 ## Clicking buttons
 
 The right button will show green and wrong button will show red. An correct answer will add 1 to scoreboard.
-![3](assets/docs/readme_images/3.png)
-![4](assets/docs/readme_images/4.png)
+![3](/docs/3.png)
+![4](/docs/4.png)
 
 ## End of Quiz
 
 At the last question you will be able to press "Play again".
-![5](assets/docs/readme_images/5.png)
+![5](/docs/5.png)
 
 ## Favicon
 
@@ -62,18 +62,19 @@ At the last question you will be able to press "Play again".
 
 ## Wireframes
 
-![Desktop](assets/docs/readme_images/wireframe_desktop.png)
-![Phone](assets/docs/readme_images/wireframe_phone.png)
+![Desktop](/docs/wireframe_desktop.png)
+![Phone](/docs/wireframe_phone.png)
 
 # Testing
 
 - The website has been tested using the extension "Live Server" throughout the project in the IDE.
+- The website has been manually tested by me, friends and my mentor throughout the entire project. 
 - Dev Tools has been used to check the responsiveness in different screen sizes as well as error codes.
 - The project has been tested in different browsers such as Chrome, IE Edge, Firefox, Safari and Opera with no errors.
 - The site has also been deployed to Git Pages and regurlarly been checked for errors.
 - Testing has also been made in Jshint, Jigsaw, W3 Validator, Browserling, Wave and Lighthouse.
 
-![Testing](assets/docs/readme_images/testing.png)
+![Testing](/docs/testing.png)
 
 ## Bugs
 
@@ -82,36 +83,41 @@ At the last question you will be able to press "Play again".
 3. **Faulty width-attribute on image** - Styled the image in the css instead of inside the img tag.
 4. **Faulty property: list-style-type** - Deleted it completely out of the nav bar.
 
+## RESUBMISSION - Fixed Bugs
+1. **Timer** - Timer bugging and skips seconds sometimes. Turned out to be two functions being called cancelling each other out. Re-arranged the timer function, breaking it down and streamlined it.
+2. **Timed out** - Alert message pops up several times when timer is running out. Decided to skip the alert message altogether and focus on letting the button "Next Question" pop up instead to create a more seamless experience.
 ## Unfixed Bugs
+1. None.
 
-1. **Timer** - Timer bugging and skips seconds sometimes. Ran out of time to fix it.
-2. **Timed out** - Alert message pops up several times when timer is running out. Ran out of time to fix it.
 
 ## Validator Testing
+Double-checked my site through W3C/Jigsaw Validator once again when resubmitting my project but couldn't find any issues this time either. 
+
+
 
 ### HTML - W3C validator
 
-![W3C Validator](assets/docs/readme_images/htmlvalidator.png)
+![W3C Validator](/docs/htmlvalidator.png)
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F) the second time.
 
 ### CSS - Jigsaw Validator
 
-![Jigsaw Validator](assets/docs/readme_images/jigsaw.png)
+![Jigsaw Validator](/docs/jigsaw.png)
 No errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) validator the second time.
 
 ### JavaScript - JShint
 
-![JShint](assets/docs/readme_images/JShint.png)
+![JShint](/docs/JShint.png)
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F) the second time. The questions are to be found in a separate file, hence the 'undefined variable'.
 
 ### Lighthouse
 
-![Lighthouse](assets/docs/readme_images/lighthouse.png)
+![Lighthouse](/docs/lighthouse.png)
 
 - Received score 98/100.
 - Had 1 warning.
 
-![Lighthouse Warning](assets/docs/readme_images/lighthouse_warning.png)
+![Lighthouse Warning](/docs/lighthouse_warning.png)
 
 ### Wave
 
@@ -123,7 +129,7 @@ Site has been tested at [Wave](https://wave.webaim.org/report#/https://rackstorm
 - JavaScript has been used for the quiz.
 - The IDE used has been Codeanywhere with Code Institutes template.
 - Git has been used to regularly adding, committing and pushing code to GitHub.
-- All code and assets have been stored at GitHub.
+- All code and  have been stored at GitHub.
 - The project has been deployed through Git Pages.
 - Favicon Generator has been used for the Favicons.
 - Icon8 has been used for downloading the free favicon image.
