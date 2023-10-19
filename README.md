@@ -36,7 +36,7 @@ Select answer in order to move on to the next question. Score and timer visible.
 
 ## Clicking buttons
 
-The right button will show green and wrong button will show red. A correct answer will add 1 to scoreboard. 
+The right button will show green and wrong button will show red. A correct answer will add 1 to scoreboard.
 ![3](/docs/3.png)
 ![4](/docs/4.png)
 
@@ -68,7 +68,7 @@ At the last question you will be able to press "Play again".
 # Testing
 
 - The website has been tested using the extension "Live Server" throughout the project in the IDE.
-- The website has been manually tested by me, friends and my mentor throughout the entire project. 
+- The website has been manually tested by me, friends and my mentor throughout the entire project.
 - Dev Tools has been used to check the responsiveness in different screen sizes as well as error codes.
 - The project has been tested in different browsers such as Chrome, IE Edge, Firefox, Safari and Opera with no errors.
 - The site has also been deployed to Git Pages and regurlarly been checked for errors.
@@ -84,27 +84,28 @@ At the last question you will be able to press "Play again".
 4. **Faulty property: list-style-type** - Deleted it completely out of the nav bar.
 
 ## RESUBMISSION - Fixed Bugs
+
 1. **Timer** - Timer bugging and skips seconds sometimes. Turned out to be two functions being called cancelling each other out. Re-arranged the timer function, breaking it down and streamlined it.
 2. **Timed out** - Alert message pops up several times when timer is running out. Decided to skip the alert message altogether and focus on letting the button "Next Question" pop up instead to create a more seamless experience.
-3. **Navigation issues** - Due to timer issues that now has been solved it is now possible to navigate onward without issues. As soon as an answer has been selected, the Next Question-button pops up. 
+3. **Navigation issues** - Due to timer issues that now has been solved it is now possible to navigate onward without issues. As soon as an answer has been selected, the Next Question-button pops up.
 4. **Adding to the scoreboard** - It's not possible to click the right answer several times or go back to the previous question to get a higher score.
+
 ## Unfixed Bugs
+
 1. None.
 
+## Validator
 
-## Validator 
+### Resubmission
 
-### ! Resubmission !
-Double-checked my site through W3C/Jigsaw Validator once again when resubmitting my project but couldn't find any issues this time either. 
+Double-checked my site through W3C/Jigsaw Validator once again when resubmitting my project but couldn't find any issues this time either.
+
 - No issues in JShint
 - No issues in W3C/Jigsaw
-![W3C Validator](/docs/resubvalidator1.png)
-![W3C Validator](/docs/resubvalidator2.png)
-![W3C Validator](/docs/resubhtmlchecker1.png)
-![W3C Validator](/docs/resubhtmlchecker2.png)
-
-
-
+  ![W3C Validator](/docs/resubvalidator1.png)
+  ![W3C Validator](/docs/resubvalidator2.png)
+  ![W3C Validator](/docs/resubhtmlchecker1.png)
+  ![W3C Validator](/docs/resubhtmlchecker2.png)
 
 ### HTML - W3C validator
 
@@ -140,7 +141,7 @@ Site has been tested at [Wave](https://wave.webaim.org/report#/https://rackstorm
 - JavaScript has been used for the quiz.
 - The IDE used has been Codeanywhere with Code Institutes template.
 - Git has been used to regularly adding, committing and pushing code to GitHub.
-- All code and  have been stored at GitHub.
+- All code and have been stored at GitHub.
 - The project has been deployed through Git Pages.
 - Favicon Generator has been used for the Favicons.
 - Icon8 has been used for downloading the free favicon image.
@@ -150,7 +151,7 @@ Site has been tested at [Wave](https://wave.webaim.org/report#/https://rackstorm
 
 ## Adding, committing and pushing code
 
-- All code has been pushed to the repository https://rackstorm.github.io/Code_Institute_Project-2/
+- All code has been pushed to the repository <https://rackstorm.github.io/Code_Institute_Project-2/>
 - All code has been regurlary added, committed and pushed throughout the project.
 - The commands being used are `git add <file>`,
   `git commit -m “commit message”` and
