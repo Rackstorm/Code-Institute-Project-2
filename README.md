@@ -98,10 +98,10 @@ At the last question you will be able to press "Play again".
 Double-checked my site through W3C/Jigsaw Validator once again when resubmitting my project but couldn't find any issues this time either. 
 - No issues in JShint
 - No issues in W3C/Jigsaw
-![W3C Validator](/docs/ResubValidator1.png)
-![W3C Validator](/docs/ResubValidator2.png)
-![W3C Validator](/docs/ResubHTMLChecker1.png)
-![W3C Validator](/docs/ResubHTMLChecker2.png)
+![W3C Validator](/docs/resubvalidator1.png)
+![W3C Validator](/docs/resubvalidator2.png)
+![W3C Validator](/docs/resubhtmlchecker1.png)
+![W3C Validator](/docs/resubhtmlchecker2.png)
 
 
 
@@ -118,7 +118,7 @@ No errors were found when passing through the official [Jigsaw](https://jigsaw.w
 
 ### JavaScript - JShint
 
-![JShint](/docs/JShint.png)
+![JShint](/docs/jshint.png)
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frackstorm.github.io%2FCode_Institute_Project-2%2F) the second time. The questions are to be found in a separate file, hence the 'undefined variable'.
 
 ### Lighthouse
